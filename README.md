@@ -3,7 +3,11 @@
 I have been working on invoice-billing-System
 
 #<b>Tech Stack</b>
-Frontend- ReactJS, Vite, and Tailwind Css
-Backend- Spring Boot 
-Database- PostgreSQL
+
+<ol><li>Frontend- ReactJS, Vite, and Tailwind Css</li>
+<li>Backend- Spring Boot</li>
+<li>Database- PostgreSQL</li></ol>
+
+
+
 
