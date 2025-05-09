@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronDownIcon } from '@heroicons/react/16/solid';
 
-const Estimate = () => {
+const EstimateForm = () => {
   return (
     <div className="p-4 max-w-8xl mx-auto space-y-6">
       <h1 className="text-2xl font-bold">Estimate</h1>
@@ -100,4 +100,4 @@ const Estimate = () => {
   );
 };
 
-export default Estimate;
+export default EstimateForm;
