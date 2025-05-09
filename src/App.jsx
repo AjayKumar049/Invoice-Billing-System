@@ -5,7 +5,7 @@ import Estimate from "./components/Estimate";
 function App() {
   return (
     <>
-      <Estimate />
+      <EstimateForm />
       <AllEstimate />
     </>
   );
