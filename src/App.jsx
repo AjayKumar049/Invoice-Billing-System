@@ -1,12 +1,12 @@
+// App.jsx
 import "./App.css";
-import AllEstimate from "./components/AllEstimate";
-import Estimate from "./components/Estimate"; 
+import { RouterProvider } from "react-router-dom";
+import router from "./Router/Router"; 
 
 function App() {
   return (
     <>
-      <EstimateForm />
-      <AllEstimate />
+      <RouterProvider router={router} />
     </>
   );
 }
