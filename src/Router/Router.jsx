@@ -13,6 +13,8 @@ import Dashboard from "../components/Dashboard";
 import EstimateForm from "../components/EstimateForm"
 import AllEstimate from "../components/AllEstimate"
 import ForgotPassword from "../components/ForgotPassword"
+import ItemForm from "../components/ItemForm"
+import AllItems from "../components/AllItems"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +31,7 @@ const router = createBrowserRouter([
     element:(
       <><Login/>
       <ForgotPassword/>
+      <ItemForm/>
       
      </>
       
@@ -60,6 +63,14 @@ const router = createBrowserRouter([
   {
     path: "/newEstimate", 
     element: <EstimateForm />,
+  },
+  {
+    path:"/item",
+    element:<AllItems/>,
+  },
+  {
+    path: "/newItem", 
+    element: <ItemForm/>,
   },
 
 {
