@@ -8,9 +8,14 @@ import Notfound from "../components/Notfound";
 import Footer from "../components/Footer";
 import CustomerForm from "../components/CustomerForm";
 import AllCustomer from "../components/AllCustomer";
+import Sidebar from "../components/Sidebar";
+import Dashboard from "../components/Dashboard";
+import EstimateForm from "../components/EstimateForm"
+import AllEstimate from "../components/AllEstimate"
+import ForgotPassword from "../components/ForgotPassword"
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: (
       <>
         <Navbar />
@@ -23,12 +28,39 @@ const router = createBrowserRouter([
     path: "/Login",
     element:(
       <><Login/>
-      <CustomerForm/>
-      <AllCustomer/></>
+      <ForgotPassword/>
+      
+     </>
+      
     
     ) 
   },
-  
+  {
+    path: "/dashboard", 
+    element: (
+      <><Sidebar />
+      <Dashboard/></>
+    )
+  },
+  {
+    path:"/customer",
+    element:<AllCustomer/>
+  },
+
+  {
+    path:"/newCustomer",
+    element:<CustomerForm/>
+  },
+
+  {
+    path: "/estimate", 
+    element: <AllEstimate/>,
+  },
+
+  {
+    path: "/newEstimate", 
+    element: <EstimateForm />,
+  },
 
 {
     path: "*", 
