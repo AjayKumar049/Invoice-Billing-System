@@ -23,8 +23,13 @@ import com.example.billing.model.User;
 public class AuthenticationRepository {
 	
 	 
-	 private JdbcTemplate jdbcTemplate;
+	 private final JdbcTemplate jdbcTemplate;
 	 private static final Logger logger = LoggerFactory.getLogger(AuthenticationRepository.class);
+
+	@Autowired
+	public AuthenticationRepository(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
 
 	 
 	
